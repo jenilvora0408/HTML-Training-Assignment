@@ -121,3 +121,104 @@ body{
 .setting{
     top: 48vh;
 }
+
+.main .heading{
+    position: absolute;
+    top: 12vh;
+    left: 17vw;
+    font-size: 30px;
+}
+
+.main .items{
+    position: absolute;
+    top: 20vh;
+}
+
+.main .items .new-products, .added-products, .total-products, .today-sale, .total-sale{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 13vh;
+    width: 13vw;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.total-products img{
+    height: 50px;
+    width: 50px;
+}
+
+.main .items .new-products{
+    left: 20vw;
+}
+
+.main .items .added-products{
+    left: 35vw;
+}
+
+.main .items .total-products{
+    left: 50vw;
+}
+
+.main .items .today-sale{
+    left: 65vw;
+}
+
+.main .items .total-sale{
+    left: 80vw;
+}
+
+.main .text .figure{
+    font-size: 25px;
+    color: #3E3E3E;
+}
+
+.sale{
+    position: absolute;
+    top: 38vh;
+    left: 20vw;
+    background-color: #fff;
+    height: 50vh;
+    width: 50vw;
+}
+
+.sale .top .heading{
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+    font-size: 22px;
+    color: #3E3E3E;
+}
+
+.sale .top .timeline{
+    position: absolute;
+    top: 3.5vh;
+    left: 35vw;
+    display: flex;
+    gap: 25px;
+    font-size: 15px;
+    color: #ADADAD;
+}
+
+.sale .graph{
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    width: 42vw;
+}
+
+.sale .top .timeline .yearly{
+    color: #C8242F;
+}
+
+.sale .top .timeline .line{
+    position: absolute;
+    top: 3vh;
+    left: 8vw;
+    background-color: #C8242F;
+    height: 2px;
+    width: 40px;
+}
