@@ -9,7 +9,7 @@ body{
     background: #FAFAFA
 }
 
-.container{
+.container, .left, .right form, .right .buttons{
     display: flex;
 }
 
@@ -19,7 +19,6 @@ body{
 }
 
 .left{
-    display: flex;
     justify-content: center;
 }
 
@@ -46,7 +45,6 @@ body{
     
     height: 7vh;
     width: 5vw;
-
 }
 
 .right .tagline{
@@ -57,7 +55,6 @@ body{
     margin-left: 1.7vw;
     color: #3E3E3E;
     font-family: sans-serif;
-    
 }
 
 .right .tagline span{
@@ -76,7 +73,6 @@ body{
 .right form{
     position: absolute;
     top: 48vh;
-    display: flex;
     flex-direction: column;
     gap: 15px;
     margin-left: 1.7vw;
@@ -90,7 +86,6 @@ body{
 }
 
 .right .buttons{
-    display: flex;
     gap: 9vw;
     margin-top: 10px;
 }
@@ -101,6 +96,7 @@ body{
     color: #fff;
     padding: 8px 35px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .right .buttons .forgot-pass{
@@ -116,5 +112,5 @@ body{
 
 .right .register-para span{
     color:  rgb(206, 38, 38);
-    
+    cursor: pointer;
 }

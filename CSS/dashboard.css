@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FAFAFA;
+    font-family: sans-serif;
+}
+
+.navbar{
+    height: 80px;
+    background-color: #fff;
+}
+
+.navbar .menu-bar{
+    position: absolute;
+    top: 30px;
+    left: 29px;
+}
+
+.navbar .header-logo{
+    position: absolute;
+    top: 25px;
+    left: 72px;
+}
+
+.navbar .search-icon{
+    position: absolute;
+    top: 35px;
+    left: 291px;
+    width: 16px;
+    height: 16px;
+}
+
+.navbar .search{
+    position: absolute;
+    top: 35px;
+    left: 16.5vw;
+    font-size: 16px;
+}
+
+.navbar .notification-icon{
+    position: absolute;
+    top: 35px;
+    left: 80vw;
+}
+
+.navbar .profile{
+    position: absolute;
+    top: 25px;
+    left: 85vw;
+}
+
+.navbar .john{
+    position: absolute;
+    top: 35px;
+    left: 88vw;
+    font-size: 21px;
+}
+
+.navbar .download-arrow{
+    position: absolute;
+    top: 38px;
+    left: 95vw;
+}
+
+.sidebar{
+    height: 90vh;
+    width: 14vw;
+    background: #fff;
+}
+
+.dashboard, .analysis, .inbox, .history, .users, .maintenance, .setting{
+    position: absolute;
+    left: 2vw;
+    display: flex;
+    gap: 10px;
+    padding-left: 25px;
+    align-items: center;
+    width: 183px;
+    height: 43px;
+    
+}
+
+.dashboard{
+    top: 12vh;
+    background: #FFF3F4;
+}
+
+.sidebar .dashboard img, .analysis img, .inbox img, .history img, .users img, .maintenance img, .setting img{
+    height: 20px;
+    width: 20px;
+}
+
+.sidebar .dashboard p, .analysis p, .inbox p, .history p, .users p, .maintenance p, .setting p{
+    font-size: 18px;
+}
+
+.analysis{
+    top: 18vh;
+}
+
+.inbox{
+    top: 24vh;
+}
+
+.history{
+    top: 30vh;
+}
+
+.users{
+    top: 36vh;
+}
+
+.maintenance{
+    top: 42vh;
+}
+
+.setting{
+    top: 48vh;
+}
