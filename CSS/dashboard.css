@@ -185,7 +185,7 @@ body{
     width: 50vw;
 }
 
-.sale .top .heading{
+.sale .top .heading, .country-sale .heading, .listing .heading{
     position: absolute;
     top: 3vh;
     left: 2vw;
@@ -222,3 +222,117 @@ body{
     height: 2px;
     width: 40px;
 }
+
+.country-sale{
+    position: absolute;
+    top: 38vh;
+    left: 72vw;
+    background-color: #fff;
+    height: 50vh;
+    width: 21vw;
+}
+
+.country-sale .pie-chart{
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+}
+
+.country-sale .country .col-1, .country-sale .country .col-2{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+}
+
+.country-sale .country .col-1{
+    top: 35vh;
+}
+
+.country-sale .country .col-2{
+    top: 40vh;
+}
+
+.country-sale .country .col-1 .name-1, .country-sale .country .col-1 .name-2, .country-sale .country .col-2 .name-1, .country-sale .country .col-2 .name-2{
+    display: flex;
+    margin-left: 40px;
+}
+
+.country-sale .country .col-1 .name-1 .red, .country-sale .country .col-1 .name-2 .green, .country-sale .country .col-2 .name-1 .orange, .country-sale .country .col-2 .name-2 .yellow{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.country-sale .country .col-1 .name-1 .red{
+    background: #C8242F;
+}
+
+.country-sale .country .col-1 .name-2 .green{
+    background: #A2B86C;
+}
+
+.country-sale .country .col-2 .name-1 .orange{
+    background: #F16C20;
+}
+
+.country-sale .country .col-2 .name-2 .yellow{
+    background: #EBC844;
+}
+
+.country-sale .country .col-1 .name-1 .text{
+    font-size: 15px;
+}
+
+.country-sale .country .col-2 .name-2{
+    margin-left: 8.1vw;
+}
+
+.listing{
+    position: absolute;
+    top: 95vh;
+    left: 20vw;
+    background: #fff;
+    height: 70vh;
+    width: 73vw;
+}
+
+.listing table{
+    position: absolute;
+    top: 10vh;
+    left: 1.5vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  tr{
+    border-bottom: 2px solid #e9e9e9;
+    font-size: 15px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+  }
+
+  th{
+    color: #ADADAD;
+    text-transform: uppercase;
+  }
+
+  #paid{
+    color: #3CDD5F;
+    /* text-align: center; */
+    /* background: #EBFFEF; */
+  }
+
+  #failed{
+    color: #FF4545;
+  }
+
+  #pending{
+    color: #BABABA;
+  }
