@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FAFAFA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ------------
+    NAVBAR
+-------------------- */
+.navbar{
+    height: 7vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.navbar .left{
+    display: flex;
+    width: 75vw;
+    align-items: flex-start;
+}
+.navbar .menu-bar{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.navbar .header-logo{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.search-icon{
+    height: 3vh;
+    width: 3vw;
+    margin-left: 4vw;
+}
+.search-input{
+    padding: 5px 12px;
+    border: none;
+}
+.navbar .right{
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+}
+.navbar .notifications{
+    margin-left: 5vw;
+    cursor: pointer;
+}
+.navbar .profile{
+    margin-left: 4vw;
+    cursor: pointer;
+}
+.navbar .user-name{
+    margin-left: .5vw;
+    cursor: pointer;
+}
+.navbar .arrow{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+/* ----------------
+    SIDEBAR
+-------------------- */
+.sidebar{
+    height: 93vh;
+    width: 15vw;
+    background: #fff;
+}
+.sidebar-img{
+    height: 2vh;
+    width: 2vw;
+}
+.sidebar ol{
+    list-style: none;
+    padding: 2vh 2vw;
+}
+.sidebar ol li span{
+    font-size: 18px;
+}
+.sidebar .active-list{
+    background: #FFF3F4;
+}
+.sidebar ol li{
+    padding: 1vh 1vw;
+    margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar ol li:hover{
+    background: #FFF3F4;
+}
+@media only screen and (max-width: 1200px){
+    .sidebar ol{
+        padding: 2vh 0vw;
+    }
+    .sidebar ol li span{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .sidebar{
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 20vw;
+    }
+}
+/* -------------------
+    Heading
+    ------------------- */
+.heading{
+    font-size: 30px;
+}
+.main-container{
+    display: flex;
+}
+/* ---------------------
+    Dashboard Items 
+    --------------------*/
+.dashboard{
+    margin: 2vh 4vw;
+}
+.dashboard .items{
+    display: flex;
+    gap: 5vw;
+}
+.dashboard .items .item{
+    background: #fff;
+    height: 12vh;
+    width: 12vw;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard .items .item .figure{
+    font-size: 25px;
+}
+.dashboard .items .item .text p{
+    color: #3E3E3E;
+}
+.dashboard .items .item .img .img-size{
+    height: 5vh;
+    width: 3vw;
+}
+@media only screen and (max-width: 1200px){
+    .dashboard .items .item .figure{
+        font-size: 23px;
+    }
+}
+ @media only screen and (max-width: 900px){
+    .dashboard{
+        width: 100vw;
+    }
+    .dashboard .items{
+        gap: 2vh;
+    }
+    .dashboard .items .item{
+        background: #fff;
+        height: 12vh;
+        width: 12vw;
+        padding: 2vh 8vw;
+        /* gap: 10%; */
+    }
+     .dashboard .items .item .img .img-size{
+        height: 5vh;
+        width: 4vw;
+        margin-right: 1vw;
+    }
+    .dashboard .items .item .figure{
+        font-size: 22px;
+    }
+} 
+@media only screen and (max-width: 600px){
+    .dashboard .items{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+    }
+    .dashboard .items .item{
+        height: 12vh;
+        width: 40vw;
+        padding: 2vh 8vw;
+    }
+    .dashboard .items .item .figure{
+        font-size: 25px;
+    }
+    .dashboard .items .item .img .img-size{
+        height: 8vh;
+        width: 7vw;
+        margin-right: 2vw;
+    }
+    .dashboard .heading{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px){
+    .dashboard{
+        margin-left: 18vw;
+    }
+    .dashboard .items{
+        gap: 2vh;
+    }
+    .dashboard .items .item{
+        height: 12vh;
+        width: 50vw;
+        padding: 2vh 8vw;
+    }
+    .dashboard .items .item .figure{
+        font-size: 20px;
+    }
+    .dashboard .items .item .text .text-label{
+        font-size: 14px;
+    }
+}
+/* ---------------
+        Graph
+------------------- */
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.content .graph{
+    display: flex;
+    gap: 2vw;
+}
+.graph .left-graph{
+    background: #fff;
+    height: 55vh;
+    width: 50vw;
+}
+.graph .right-graph{
+    background: #fff;
+    height: 55vh;
+    width: 28vw;
+}
+.left-graph .right{
+    display: flex;
+    gap: 2vw;
+}
+.left-graph .right p{
+    color: #ADADAD;
+}
+.left-graph .right p:hover{
+    color: #C8242F;
+    border-bottom: 2px solid #C8242F;
+    cursor: pointer;
+}
+.left-graph .header{
+    display: flex;
+    margin: 2vh 2vw;
+}
+.left-graph .left{
+    width: 75vw;
+}
+.left-graph .header .sale-heading{
+    font-size: 22px;
+    color: #3E3E3E;
+}
+.left-graph .img .data-graph{
+    margin: 3vh 2vw;
+    width: 45vw;
+}
+.graph .right-graph{
+    display: flex;
+    flex-direction: column;
+}
+.right-graph .chart-heading{
+    color: #3E3E3E;
+    font-size: 22px;
+}
+.right-graph .title{
+    margin: 2vh 1vw;
+}
+.right-graph .chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-graph .pie-chart{
+    margin-top: 4vh;
+}
+.red, .green, .orange, .yellow{
+    height: 2vh;
+    width: 1vw;
+    border-radius: 50%;
+}
+.countrys{
+    margin: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.red{
+    background: #C8242F;
+}
+.green{
+    background: #A2B86C;
+}
+.orange{
+    background: #F16C20;
+}
+.yellow{
+    background: #EBC844;
+}
+.country-1, .country-2, .country-3, .country-4{
+    display: flex;
+    gap:0.5vw;
+    align-items: center;
+}
+.country-name{
+    color: #3E3E3E;
+    font-size: 15px;
+}
+.line-1{
+    display: flex;
+    gap: 4vw;
+}
+.line-2{
+    display: flex;
+    gap: 10.4vw;
+}
+@media only screen and (max-width: 1200px){
+    .graph .left-graph, .graph .right-graph{
+        height: 50vh;
+    }
+    .data-graph{
+        height: 35vh;
+    }
+    .right-graph .pie-chart{
+        margin-top: 0vh;
+    }
+    .line-1{
+        display: flex;
+        gap: 0.2vw;
+    }
+}
+@media only screen and (max-width: 900px){
+    .graph{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .graph .left-graph{
+        width: 70vw;
+    }
+    .graph .left-graph .img .data-graph{
+        width: 60vw;
+    }
+    .graph .right-graph{
+        width: 50vw;
+    }
+    .graph .right-graph .line-1{
+        gap: 10vw;
+    }
+    .graph .right-graph .line-2{
+        gap: 24vw;
+    }
+}
+/* ------------------
+        Table
+    ----------------- */
+.listing{
+    background: #fff;
+    height: 65vh;
+    width: 73vw;
+}
+.listing .table-header{
+    display: flex;
+    align-items: center;
+}
+ .listing .table-header .heading{
+    margin: 2vh 1vw;
+    font-size: 22px;
+    color: #3E3E3E;
+    width: 65vw;
+}   
+.listing .table-header .view-all{
+    font-size: 12px;
+    color: #C8242F;
+}
+table {
+    border-collapse: collapse;
+    width: 95%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0vh 1vw;
+}
+tr{
+    border-bottom: 2px solid #e9e9e9;
+    font-size: 15px;
+}  
+th, td {
+    text-align: left;
+    padding: 12px;
+} 
+th{
+    color: #ADADAD;
+    text-transform: uppercase;
+} 
+#paid{
+    color: #3CDD5F;
+    /* text-align: center; */
+    /* background: #EBFFEF; */
+}  
+#failed{
+    color: #FF4545;
+}
+#pending{
+    color: #BABABA;
+}
+@media only screen and (max-width: 1200px){
+    th, td {
+        text-align: left;
+        padding: 8px;
+    } 
+}    
+@media only screen and (max-width: 900px){
+    .listing{
+        width: 95vw;
+        height: 55vh;
+    }
+    tr{
+        font-size: 14px;
+    }
+    .listing .table-header .heading{
+        width: 85vw;
+    }  
+}
+@media only screen and (max-width: 600px){
+    th, td {
+        text-align: left;
+        padding: 3px 5px;
+    }
+    tr{
+        font-size: 12px;
+    }
+}

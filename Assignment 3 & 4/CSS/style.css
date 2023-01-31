@@ -1,0 +1,98 @@
+*{
+    background: #FAFAFA;
+}
+.hero-image{
+    border-radius: 50%;
+    border: 20px solid #fff;
+}
+.header-logo{
+    height: 6vh;
+}
+span{
+    color: #C8242F;
+}
+.login-para{
+    color: #3E3E3E;
+}
+.inputs{
+    border: 1px solid #ADADAD;
+}
+.button{
+    border: 1px solid gray;
+}
+.forgot-pass, .bottom-line a{
+    text-decoration: none;
+    color: #ADADAD;
+}
+.bottom-line a{
+    color: #C8242F;
+}
+.login-button{
+    border-radius: 23px;
+}
+.bottom-line{
+    color: #ADADAD;
+}
+@media only screen and (max-width: 375px){
+    form{
+        /* position: absolute; */
+        top: 46vh;
+        left: 5vw;
+    }
+    .hero-image{
+        /* position: absolute; */
+        top: 2vh;
+        left: 0vw;
+        width: 100%;
+    }
+    .login-button{
+        width: 4vw;
+    }
+    .tagline{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    .hero-image{
+        /* position: absolute; */
+        top: 2vh;
+        left: 12vw;
+        /* left: 0vws; */
+        /* height: 80vh; */
+        width: 100%;
+    }
+    form{
+        position: absolute;
+        top: 35vh;
+        left: 5vw;
+    }
+    .tagline{
+        width: 65vw;
+    }
+    .hero-image{
+        height: 40vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    .tagline{
+        width: 60vw;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    form{
+        position: absolute;
+        top: 65vh;
+    }
+    form input{
+        width: 35vw;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .tagline{
+        width: 55vw;
+    }
+    form input{
+        width: 35vw !important;
+    }
+}
